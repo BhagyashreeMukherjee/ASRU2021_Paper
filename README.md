@@ -28,4 +28,4 @@ Funding Agency:
 
 Paper link : https://ieeexplore.ieee.org/document/9688146
 
-Audio samples : https://raw.githack.com/BhagyashreeMukherjee/Voice_conversion_Research/main/ASRU2021/index.html
+Audio samples : https://bhagyashreemukherjee.github.io/ASRU2021_Paper/ASRU2021/
