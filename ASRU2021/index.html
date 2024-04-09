@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Analysis of conversational speech with application to voice adaptation</title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="text/css" href="css/pcTest.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo-container">
+				<img class='iitm-logo' src="img/iitm-logo.jpg"/>
+			</div>
+			<div class="page-title" >
+				<div class= "page-title-main">
+						Adaptation for Conversational Speech
+				</div>
+				<div class= "page-title-sub above-640">
+						Department of Computer Science and Engineering, IIT Madras
+				</div>
+				<div class= "page-title-sub below-640">
+						Department of CSE, IIT Madras
+				</div>
+			</div>
+    
+		</div>
+		<div class="content">
+			<div class="instructions">
+				 Title of the paper: <b> Analysis of conversational speech with application to voice adaptation </b>
+				<br>(Communicated to ASRU 2021)
+				<br>
+				<br>
+				<br>
+
+				<!-- <div class="left-align">In a country like India, which has a diverse linguistic culture, code-switching is very common. Fluency in
+multiple languages brings in code-switching sub-consciously. Many of the daily-used words in native languages
+have been replaced by their English counterparts (such as fan, switch, light, train, etc.). Further, in the current
+scenario, one is surrounded by people of different linguistic backgrounds. This results in borrowing of words from
+other languages into one's vocabulary. Conversational speech may include sentences, each of which is a mixture
+of words from different languages, or a mixture of sentences from different languages. Such a scenario calls
+for the inclusion of code-switching ability in current TTS systems to produce natural sounding speech. These
+systems should be capable of synthesising code-switched sentences that preserve the original pronunciation of
+the words while maintaining the accent of the speaker.</span>
+			</div> -->
+			
+			
+			<p class="centeralign"><b> <u>	Experiment 1 : Monolingual Voice Adaptation </u></b></p>
+			<br>
+			<br>
+			<table class="demo-table">
+
+				<tr>
+				    <th rowspan=2>Examples</th>
+				    <th colspan="4" class="centeralign">Systems</th>
+				</tr>
+			  <tr>
+			  		<th>Original</th>
+				    <th>System 1</th>
+				    <th>System 3</th>
+				    <th>System 4</th>
+			  </tr>
+			  
+			  <tr>
+			  		<td class="type">
+				    	Example 1 
+				    	
+				    </td>
+			  		<td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/orig_02.wav"></audio><img  width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/conv_02.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/target_02.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/auto_02.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				   
+				    	
+
+				    							    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 2 
+				    	
+				    </td>
+			  		<td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/orig_05.wav"></audio><img  width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/conv_05.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/target_05.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/auto_05.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    
+				    						    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 3 
+				    	
+				    </td>
+			  		<td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/orig_07.wav"></audio><img  width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/conv_07.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/target_07.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/auto_07.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				
+				    	
+				    						    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 4 
+				    	
+				    </td>
+			  		<td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/orig_08.wav"></audio><img  width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/conv_08.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/target_08.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/auto_08.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				   
+				    								    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 5 
+				  
+				    </td>
+			  		<td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/orig_18.wav"></audio><img  width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/conv_18.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/target_18.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/mono/auto_18.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     
+				    	
+				    							    
+			  </tr>
+			</table>
+			<br>
+			System 2 is not included since it fails to generate the original speaker's voice
+			<br>
+			<br>
+
+
+			<p class="centeralign"><b> <u>	Experiment 2 - Cross-Lingual Voice Adaptation </u></b></p>
+			<br>
+			<br>
+			<table class="demo-table">
+
+			  <tr>
+				    <th rowspan=2>Examples</th>
+				    <th colspan="4" class="centeralign">Systems</th>
+				</tr>
+			  <tr>
+				    <th>Original(English)</th>
+				    <th>System 1</th>
+				    <th>System 3</th>
+				    <th>System 4</th>
+			  </tr>
+			  
+			  <tr>
+			  		<td class="type">
+				    	Example 1 
+				    </td>
+
+				  
+
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/orig_01.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    <a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/conv_01.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/test_01.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/auto_01.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    	
+
+				    							    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 2 
+				    	
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/orig_02.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				       <td>
+				    <a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/conv_03.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/test_03.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/auto_03.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    						    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 3 
+				    	
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/orig_03.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				       <td>
+				    <a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/conv_10.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/test_10.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/auto_10.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    	
+				    	
+				    						    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 4 
+				    	
+	
+
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/orig_04.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				       <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/conv_11.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/test_11.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/auto_11.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    								    
+			  </tr>
+			  <tr>
+			  		<td class="type">
+				    	Example 5 
+				  
+				    </td>
+
+				    <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/orig_05.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				       <td>
+				     	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/conv_13.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+
+				      <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/test_13.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				     <td>
+				    	<a onclick="closeAllAudio();this.firstChild.play()"><audio><source src="audio_files/cross/auto_13.wav"></audio><img width="30" alt="" src="img/audio.png" height="30"></a>
+				    </td>
+				    	
+				    							    
+			  </tr>
+
+			</table>
+			Generated audios are the hindi translations of the target audios.<br>
+			System 2 is not included since it fails to generate the original speaker's voice
+			<br> 
+			<br>	
+			<br>
+			<br>
+
+			
+			
+		</div>
+		<div class="footer">
+		</div>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/code.js"></script>
+		
+	</body>
+</html>
